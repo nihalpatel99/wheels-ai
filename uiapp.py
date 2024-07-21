@@ -25,7 +25,7 @@ Answer:
     
     prompt = prompt_template.format(question=question,response_style=response_style)
     llm = TogetherLLM(
-    model="meta-llama/Meta-Llama-3-8B-Instruct-Lite", api_key=api_key
+    model="meta-llama/Meta-Llama-3-70B-Instruct-Lite", api_key=api_key
 )
 
     resp = llm.complete(prompt)
